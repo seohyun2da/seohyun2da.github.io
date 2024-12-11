@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Cosmetics</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* 기본 스타일 */
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #eaeaea;
+      color: #000;
+      -ms-overflow-style: none;
+    }
+
+
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*특정 부분 스크롤바 없애기*/
+
+.box{
+   -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none;
+}
+
+
+    /* 헤더 */
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: #000;
+      height: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #eaeaea;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    .menu :hover {
+        color: rgb(255, 47, 0);
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-left: 5vw;
+      text-align: center;
+      float: center;
+
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    main h1 {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 7vw;
+    }
+
+
+    .content {
+      margin-top: 25vh;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    aside {
+      float: left;
+      width: 40%;
+      padding-top: -20vh;
+      padding-bottom: 20vh;
+    }
+
+    section {
+      float: right;
+      width: 55%;
+      padding-top: 10vh;
+    }
+
+    aside {
+      width: 100%;
+      height: 30vh;
+
+      margin-bottom: 20px;
+    }
+
+    section .skin-type-box {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #000;
+      overflow: auto;
+    }
+
+    section .skin-type-box table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    section .skin-type-box th, 
+    section .skin-type-box td {
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    section .description-box {
+      width: 100%;
+      height: 30vh;
+      border: 1px solid #000;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1vh 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="menu">
+      <a href="about.html">ABOUT</a>
+      <a href="base.html">BASE</a>
+      <a href="color.html">COLOR</a>
+      <a href="lip.html">LIP</a>
+      <a href="cleanser.html">CLEANSER</a>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <h1><a href="index.html">Cosmetics</a></h1>
+  </main>
+
+  <!-- 콘텐츠 섹션 -->
+  <div class="content clearfix">
+    <aside>
+      <div class="image-box">
+        <img src="suncream.jpg" width="400vw">
+      </div>
+
+      <div class="image-box">
+        <img src="suncream.jpg" width="400vw">
+      </div>
+      
+    </aside>
+    
+    <section>
+      <div class="skin-type-box">
+        <table>
+          <tr>
+            <th>펄이있는</th>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>글리터가있는</th>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>지속력좋은</th>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>웹톤에게추천하는</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>고정잘되는</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>투명한</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>골드톤의</th>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="description-box">
+        제품 설명
+      </div>
+    </section>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    &copy; 2024 Cosmetics. All rights reserved.
+  </footer>
+</body>
+</html>

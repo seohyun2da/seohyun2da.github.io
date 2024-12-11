@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Cosmetics</title>
+  
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* 기본 스타일 */
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #eaeaea;
+      color: #000;
+      -ms-overflow-style: none;
+    }
+
+
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*특정 부분 스크롤바 없애기*/
+
+.box{
+   -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none;
+}
+
+
+    /* 헤더 */
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: #000;
+      height: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #eaeaea;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    .menu :hover {
+        color: rgb(255, 47, 0);
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-left: 5vw;
+      text-align: center;
+      float: center;
+
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    main h1 {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 7vw;
+    }
+
+    /* 섹션 */
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25vh;
+      text-align: center;
+      font-family: '아리따 돋움';
+      
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      width: 60%;
+      border: 1px solid #000;
+      padding: 20px;
+      background: #fff;
+    }
+
+    /* 어사이드 */
+    aside {
+      font-family: '아리따 돋움';
+      margin-top: 20vh;
+      padding: 32px 0;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      gap: 32px; 
+      padding-top: 0vh;
+      padding-bottom: 5vh;
+    }
+    .second-aside {
+      font-family: '아리따 돋움';
+      margin-top: 20vh;
+      padding: 32px 0;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      gap: 32px; 
+      padding-top: -5vh;
+      padding-bottom: 14vh;
+    }
+
+    .product {
+      width: 30%;
+      text-align: left;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      background-color: #e0e0e0; /* 이미지 배경 */
+      margin-bottom: 16px;
+    }
+
+    .product .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product .discount {
+      color: red;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .product .price {
+      font-size: 16px;
+      color: #000;
+    }
+
+    .product .rating {
+      margin-top: 8px;
+      color: #ffbf00; /* 별점 색상 */
+      font-size: 14px;
+    }
+
+    /* 푸터 */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1vh 0;
+      font-size: 16px;
+    }
+
+    /* 반응형 */
+    @media only screen and (max-width:768px) {
+      .menu, main {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 4vw;
+        padding-left: none;
+        padding-left: -20vw;
+        padding-right: 10vw;
+      }
+      section p {
+        width: 80%; /* 모바일에서 더 좁은 폭 */
+        font-size: 16px;
+        letter-spacing: 2vw; 
+      }
+    }
+
+    @media only screen and (max-width:620px) {
+      .menu, main {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 2vw;
+        padding-left: none;
+        padding-left: 2vw;
+      }
+      section p {
+        width: 90%; /* 작은 화면에서 더 좁은 폭 */
+        letter-spacing: 2vw; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="menu">
+      <a href="about.html">ABOUT</a>
+      <a href="base.html">BASE</a>
+      <a href="color.html">COLOR</a>
+      <a href="lip.html">LIP</a>
+      <a href="cleanser.html">CLEANSER</a>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <h1><a href="index.html"> Cosmetics</a></h1>
+  </main>
+
+  <!-- 어사이드 (제품 정보) -->
+  <aside>
+    <div class="product">
+      <img src="Balm.png" width="20vw">
+      <div class="name">롬앤 글래스팅 멜팅 밤</div>
+      <div class="discount">24%</div>
+      <div class="price">9,900원</div>
+      <div class="rating">⭐4.7</div>
+    </div>
+    <div class="product">
+      <img src="due.png" width="20vw">
+      <div class="name">롬앤 듀이풀 워터 틴트</div>
+      <div class="discount">24%</div>
+      <div class="price">9,900원</div>
+      <div class="rating">⭐4.6</div>
+    </div>
+    <div class="product">
+      <img src="ma.png" width="19vw">
+      <div class="name">에뛰드 진저슈가 오버나이트 립마스크</div>
+      <div class="discount">10%</div>
+      <div class="price">8,100원</div>
+      <div class="rating">⭐4.7</div>
+    </div>
+
+  <!-- 푸터 -->
+  <footer>
+    &copy; 2024 Cosmetics. All rights reserved.
+  </footer>
+</body>
+</html>

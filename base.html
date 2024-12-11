@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Cosmetics</title>
+  
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* 기본 스타일 */
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #eaeaea;
+      color: #000;
+      -ms-overflow-style: none;
+    }
+
+
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*특정 부분 스크롤바 없애기*/
+
+.box{
+   -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none;
+}
+
+
+    /* 헤더 */
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: #000;
+      height: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+    .menu :hover {
+        color: rgb(255, 47, 0);
+    }
+    .menu a {
+      text-decoration: none;
+      color: #eaeaea;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-left: 5vw;
+      text-align: center;
+      float: center;
+
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    main h1 {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 7vw;
+    }
+
+    /* 섹션 */
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25vh;
+      text-align: center;
+      font-family: '아리따 돋움';
+      
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      width: 60%;
+      border: 1px solid #000;
+      padding: 20px;
+      background: #fff;
+    }
+
+    /* 어사이드 */
+    aside {
+      font-family: '아리따 돋움';
+      margin-top: 20vh;
+      padding: 32px 0;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      gap: 32px; 
+      padding-top: 18vh;
+      padding-bottom: 14vh;
+    }
+
+    .product {
+      width: 30%;
+      text-align: left;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      background-color: #e0e0e0; /* 이미지 배경 */
+      margin-bottom: 16px;
+    }
+
+    .product .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product .discount {
+      color: red;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .product .price {
+      font-size: 16px;
+      color: #000;
+    }
+
+    .product .rating {
+      margin-top: 8px;
+      color: #ffbf00; /* 별점 색상 */
+      font-size: 14px;
+    }
+
+    /* 푸터 */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1vh 0;
+      font-size: 16px;
+    }
+
+    /* 반응형 */
+    @media only screen and (max-width:768px) {
+      .menu, main {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 4vw;
+        padding-left: none;
+        padding-left: -20vw;
+        padding-right: 10vw;
+      }
+      section p {
+        width: 80%; /* 모바일에서 더 좁은 폭 */
+        font-size: 16px;
+        letter-spacing: 2vw; 
+      }
+    }
+
+    @media only screen and (max-width:620px) {
+      .menu, main {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 2vw;
+        padding-left: none;
+        padding-left: 2vw;
+      }
+      section p {
+        width: 90%; /* 작은 화면에서 더 좁은 폭 */
+        letter-spacing: 2vw; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="menu">
+      <a href="about.html">ABOUT</a>
+      <a href="base.html">BASE</a>
+      <a href="color.html">COLOR</a>
+      <a href="lip.html">LIP</a>
+      <a href="cleanser.html">CLEANSER</a>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <h1><a href="index.html"> Cosmetics</a></h1>
+  </main>
+
+  <!-- 섹션 -->
+  <section>
+    <h2>Base Cosmetics</h2>
+    <p>
+      <b>"Base cosmetics"</b> 는 메이크업에서 기초 화장을 의미하는 용어로, <br>
+      피부 톤을 고르게 하고 매끄럽게 보이도록 준비하는 제품들을 가리킵니다. <br>
+      이러한 제품은 메이크업의 첫 단계에서 사용되며, 주로 피부결 정돈과 톤 보정 역할을 합니다. 
+    </p>
+  </section>
+
+  <!-- 어사이드 (제품 정보) -->
+  <aside>
+    <div class="product">
+      <img src="pad.jpg" width="20vw">
+      <div class="name">셀리맥스 시카 지우개 패드</div>
+      <div class="discount"></div>
+      <div class="price">24,000원</div>
+      <div class="rating">⭐4.9</div>
+    </div>
+    <div class="product">
+      <img src="ample.jpg" width="20vw">
+      <div class="name">웰라쥬 리얼 히알루로닉 블루 100 앰플</div>
+      <div class="discount">10%</div>
+      <div class="price">28,000원</div>
+      <div class="rating">⭐4.8</div>
+    </div>
+    <div class="product">
+      <img src="primer.jpg" width="19vw">
+      <div class="name">코드글로컬러 픽스온 프라이머</div>
+      <div class="discount"></div>
+      <div class="price">20,000원</div>
+      <div class="rating">⭐4.7</div>
+    </div>
+  </aside>
+
+  <!-- 푸터 -->
+  <footer>
+    &copy; 2024 Cosmetics. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Cosmetics</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* 기본 스타일 */
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #eaeaea;
+      color: #000;
+      -ms-overflow-style: none;
+    }
+
+
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*특정 부분 스크롤바 없애기*/
+
+.box{
+   -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none;
+}
+
+
+    /* 헤더 */
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: #000;
+      height: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #eaeaea;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-left: 5vw;
+      text-align: center;
+      float: center;
+
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    main h1 {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 7vw;
+    }
+
+
+    .content {
+      margin-top: 25vh;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    aside {
+      float: left;
+      width: 40%;
+
+      padding-bottom: 20vh;
+      margin-top: -15vh;
+    }
+    .second-aside {
+      float: right;
+      width: 54vw;
+      padding-bottom: 20vh;
+      margin-top: -19vh;
+
+      font-family: '아리따 돋움';
+      padding: 32px 0;
+      gap: 32px; 
+    }
+    .third-aside {
+      float: left;
+      width: 40%;
+      
+      padding-bottom: 20vh;
+      margin-top: -15vh;
+    }
+    .forth-aside {
+      float: right;
+      width: 54vw;
+      padding-bottom: 20vh;
+      margin-top: -19vh;
+
+      font-family: '아리따 돋움';
+      padding: 32px 0;
+      gap: 32px; 
+    }
+    .product {
+      width: 30%;
+      text-align: left;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      background-color: #e0e0e0; /* 이미지 배경 */
+      margin-bottom: 16px;
+    }
+
+    .product .name {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product .discount {
+      color: red;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .product .price {
+      font-size: 20px;
+      color: #000;
+    }
+
+    .product .rating {
+      margin-top: 8px;
+      color: #ffbf00; /* 별점 색상 */
+      font-size: 15px;
+    }
+
+    section {
+      float: right;
+      width: 59vw;
+      margin-top: -50vh;
+      padding: 32px 0;
+
+    }
+    table th, td, tr {
+        border: solid 1px black;
+        border-style: dashed;
+        margin-right: 10vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+    }
+
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1vh 0;
+      font-size: 16px;
+    }
+        /* 반응형 */
+        @media only screen and (max-width:768px) {
+      .menu, main, aside {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 4vw;
+        padding-left: none;
+        padding-left: -20vw;
+        padding-right: 10vw;
+      }
+      section p {
+        width: 80%; /* 모바일에서 더 좁은 폭 */
+        font-size: 16px;
+        letter-spacing: 2vw; 
+      }
+    }
+
+    @media only screen and (max-width:620px) {
+      .menu, main, aside {
+        width: 100%;
+      }
+      main h1 {
+        letter-spacing: 2vw;
+        padding-left: none;
+        padding-left: 2vw;
+      }
+      section p {
+        width: 90%; /* 작은 화면에서 더 좁은 폭 */
+        letter-spacing: 2vw; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="menu">
+      <a href="about.html">ABOUT</a>
+      <a href="base.html">BASE</a>
+      <a href="color.html">COLOR</a>
+      <a href="lip.html">LIP</a>
+      <a href="cleanser.html">CLEANSER</a>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <h1><a href="index.html">Cosmetics</a></h1>
+  </main>
+
+  <!-- 콘텐츠 섹션 -->
+  <div class="content clearfix">
+    <aside>
+      <div class="image-box">
+        <img src="suncream.jpg" width="500vw">
+      </div>
+
+    </aside>
+    <aside class="second-aside">
+
+        <div class="product">
+            <div class="name">제품이름</div>
+            <div class="discount">할인율</div>
+            <div class="price">가격</div>
+            <div class="rating">별점⭐</div>
+          </div>
+        </div>
+        
+      </aside>
+    
+    <section>
+
+        <table>
+          <tr>
+            <th>펄이있는</th>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>글리터가있는</th>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>지속력좋은</th>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>웹톤에게추천하는</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>고정잘되는</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>투명한</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>골드톤의</th>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+      
+
+    </section>
+  </div>
+  <div class="content clearfix">
+    <aside class="third-aside">
+      <div class="image-box">
+        <img src="suncream.jpg" width="500vw">
+      </div>
+
+
+      
+    </aside>
+    <aside class="forth-aside">
+
+        <div class="product">
+            <div class="name">제품이름</div>
+            <div class="discount">할인율</div>
+            <div class="price">가격</div>
+            <div class="rating">별점⭐</div>
+          </div>
+        </div>
+        
+      </aside>
+    
+
+  <!-- 푸터 -->
+  <footer>
+    &copy; 2024 Cosmetics. All rights reserved.
+  </footer>
+</body>
+</html>
